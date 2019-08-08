@@ -1,28 +1,30 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald);
 * {
     margin: 0;
     padding: 0;
     box-sizing: Border-box;
-}
-h1 {
-    text-align: center;
-    font-size: 50px;
-    font-family: Oswald;
-    color: #f47f1b;
 }
 body {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
+.minion {
+    position: absolute;
+}
 .code-wrapper {
     flex: 2;
+    overflow: hidden;
+}
+#code {
+    overflow: hidden;
+    height: 100%;
+    padding: 1rem;
 }
 .preview-wrapper {
-    flex: 3;
+    flex: 3 0;
 }
 .preview-wrapper {
-    background: #aaa;
+    background: radial-gradient(ellipse at center, rgba(60, 255, 255, 1) 0%, rgba(50, 50, 250, 1) 100%);
 }
 
 .preview {
