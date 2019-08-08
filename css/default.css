@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: Border-box;
+    transition: all 0.5s ease-in-out;
 }
 body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    z-index: 0;
 }
 .minion {
     position: absolute;
@@ -16,15 +18,12 @@ body {
     overflow: hidden;
 }
 #code {
-    overflow: hidden;
+    overflow: auto;
     height: 100%;
     padding: 1rem;
 }
 .preview-wrapper {
     flex: 3 0;
-}
-.preview-wrapper {
-    background: radial-gradient(ellipse at center, rgba(60, 255, 255, 1) 0%, rgba(50, 50, 250, 1) 100%);
 }
 
 .preview {
@@ -33,4 +32,11 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100%;
+}
+#main {
+    width: 200px;
+    height: 360px;
+}
+#main * {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
