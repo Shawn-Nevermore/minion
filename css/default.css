@@ -4,15 +4,31 @@
     padding: 0;
     box-sizing: Border-box;
 }
-.code-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 h1 {
     text-align: center;
     font-size: 50px;
     font-family: Oswald;
     color: #f47f1b;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.code-wrapper {
+    flex: 2;
+}
+.preview-wrapper {
+    flex: 3;
+}
+.preview-wrapper {
+    background: #aaa;
+}
+
+.preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
 }
