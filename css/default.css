@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    z-index: 0;
 }
 .minion {
     position: absolute;
@@ -36,6 +35,53 @@ body {
     width: 200px;
     height: 360px;
 }
+
 #main * {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+#left-arm,
+#left-hand,
+#right-arm,
+#right-hand {
+    background: #fce55b;
+    border-radius: 100px;
+    width: 20px;
+}
+
+#left-strap,
+#right-strap,
+#dungarees-main,
+#dungarees-front,
+#dungarees-pocket,
+#dungarees-pocket-left,
+#dungarees-pocket-right {
+    background: #336188;
+}
+
+#left-leg {
+    margin: 10px 0 0 50px;
+}
+#right-leg {
+    margin: 10px 0 0 110px;
+}
+
+#left-foot {
+    border-radius: 10px 0 4px 4px;
+    margin: 90px 0 0 40px;
+}
+#right-foot {
+    border-radius: 0 10px 4px 4px;
+    margin: 90px 0 0 110px;
+}
+
+#left-strap {
+    transform: rotate(-50deg);
+    border-radius: 16px 0 4px 4px;
+    margin: -90px 0 0 18px;
+}
+#right-strap {
+    transform: rotate(50deg);
+    border-radius: 0 16px 4px 4px;
+    margin: -90px 0 0 170px;
 }
