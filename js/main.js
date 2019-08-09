@@ -73,13 +73,6 @@
     width: 100px;
     z-index: 20;
 }
-#mouth-shadow {
-    border-radius: 0 0 100px 100px;
-    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.5) inset;
-    height: 50px;
-    width: 100px;
-    z-index: 29;
-}
 .teeth {
     background: #fff;
     border-radius: 0 0 8px 8px;
@@ -96,6 +89,13 @@
     margin: 30px 0 0 23px;
     width: 54px;
     z-index: 20;
+}
+#mouth-shadow {
+    border-radius: 0 0 100px 100px;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.5) inset;
+    height: 50px;
+    width: 100px;
+    z-index: 29;
 }
 
 /********手手**********/
@@ -130,54 +130,63 @@
 #dungarees {
     margin: 280px 0 0 0;
 }
-#left-strap,#right-strap{
-    height: 80px;
-    width: 14px;
+#left-strap {
+    visibility: visible;
+    transform: rotate(-50deg);
+    border-radius: 16px 0 4px 4px;
+    margin: -90px 0 0 18px;
+    z-index: 50;
+}
+#right-strap {
+    visibility: visible;
+    transform: rotate(50deg);
+    border-radius: 0 16px 4px 4px;
+    margin: -90px 0 0 170px;
     z-index: 50;
 }
 #dungarees-main {
-    border-radius: 0 0 100px 100px;
-    box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.5);
     height: 60px;
     width: 200px;
+    border-radius: 0 0 100px 100px;
+    box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.5);
     z-index: 36;
 }
 #dungarees-front {
-    border-radius: 10px 10px 0 0;
     height: 70px;
-    margin: -40px 0 0 40px;
     width: 120px;
+    border-radius: 10px 10px 0 0;
+    margin: -40px 0 0 40px;
     z-index: 36;
 }
 #dungarees-pocket {
-    border-radius: 0 0 50% 50%;
     height: 40px;
-    margin: -14px 0 0 70px;
     width: 60px;
+    border-radius: 0 0 50% 50%;
+    margin: -14px 0 0 70px;
     z-index: 50;
 }
 #dungarees-pocket-left {
+    height: 36px;
+    width: 40px;
     transform: rotate(-40deg);
     border-radius: 0 0 50% 50%;
-    height: 36px;
     margin: 10px 0 0 14px;
-    width: 40px;
     z-index: 50;
 }
 #dungarees-pocket-right {
+    height: 36px;
+    width: 40px;
     transform: rotate(40deg);
     border-radius: 0 0 50% 50%;
-    height: 36px;
     margin: 10px 0 0 146px;
-    width: 40px;
     z-index: 50;
 }
 #dungarees-logo {
+    height: 20px;
+    width: 20px;
     transform: rotate(45deg);
     border: 5px solid;
-    height: 20px;
     margin: -6px 0 0 90px;
-    width: 20px;
     z-index: 50;
 }
 
@@ -194,12 +203,19 @@
 }
 #left-foot, #right-foot {
     background: #272727;
-    border-bottom: 6px solid #000000;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     height: 24px;
     width: 50px;
+    border-bottom: 6px solid #000000;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     z-index: 34;
-}`
+}
+
+/**
+ * 好了，小黄人画好了，送给你吧
+ * 
+ * 如果对我的项目感兴趣，请联系我哟~
+ */
+`
 
     function writeCode(prefix, cssCode, fn) {
         let code = document.querySelector('#code')

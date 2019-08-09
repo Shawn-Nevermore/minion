@@ -23,7 +23,6 @@ body {
 .preview-wrapper {
     flex: 3 0;
 }
-
 .preview {
     display: flex;
     align-items: center;
@@ -35,10 +34,11 @@ body {
     width: 200px;
     height: 360px;
 }
-
 #main * {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
+
+/* S-arm */
 
 #left-arm,
 #left-hand,
@@ -49,6 +49,10 @@ body {
     width: 20px;
 }
 
+/* E-arm */
+
+/* S-dungarees */
+
 #left-strap,
 #right-strap,
 #dungarees-main,
@@ -58,6 +62,17 @@ body {
 #dungarees-pocket-right {
     background: #336188;
 }
+
+#left-strap,
+#right-strap {
+    height: 80px;
+    width: 14px;
+    visibility: hidden;
+}
+
+/* E-dungarees */
+
+/* S-legs */
 
 #left-leg {
     margin: 10px 0 0 50px;
@@ -75,16 +90,7 @@ body {
     margin: 90px 0 0 110px;
 }
 
-#left-strap {
-    transform: rotate(-50deg);
-    border-radius: 16px 0 4px 4px;
-    margin: -90px 0 0 18px;
-}
-#right-strap {
-    transform: rotate(50deg);
-    border-radius: 0 16px 4px 4px;
-    margin: -90px 0 0 170px;
-}
+/* E-legs */
 
 
 /*# sourceMappingURL=/default.708faaf5.css.map */
