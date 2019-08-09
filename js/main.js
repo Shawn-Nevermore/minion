@@ -159,35 +159,35 @@
     z-index: 36;
 }
 #dungarees-pocket {
+    z-index: 50;
     height: 40px;
     width: 60px;
     border-radius: 0 0 50% 50%;
     margin: -14px 0 0 70px;
-    z-index: 50;
 }
 #dungarees-pocket-left {
+    z-index: 50;
     height: 36px;
     width: 40px;
     transform: rotate(-40deg);
     border-radius: 0 0 50% 50%;
     margin: 10px 0 0 14px;
-    z-index: 50;
 }
 #dungarees-pocket-right {
+    z-index: 50;
     height: 36px;
     width: 40px;
     transform: rotate(40deg);
     border-radius: 0 0 50% 50%;
     margin: 10px 0 0 146px;
-    z-index: 50;
 }
 #dungarees-logo {
+    z-index: 50;
     height: 20px;
     width: 20px;
     transform: rotate(45deg);
     border: 5px solid;
     margin: -6px 0 0 90px;
-    z-index: 50;
 }
 
 /********脚脚************/
